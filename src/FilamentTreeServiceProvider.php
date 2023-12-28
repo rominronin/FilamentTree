@@ -2,11 +2,11 @@
 
 namespace Yemenpoint\FilamentTree;
 
-use Filament\PluginServiceProvider;
+use Filament\Contracts\Plugin;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class FilamentTreeServiceProvider extends PluginServiceProvider
+class FilamentTreeServiceProvider implements Plugin
 {
     public function configurePackage(Package $package): void
     {
